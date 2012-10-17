@@ -1,0 +1,6 @@
+[submodule "emscripten"]
+	path = emscripten
+	url = https://github.com/kripken/emscripten
+[submodule "sundown"]
+	path = sundown
+	url = https://github.com/vmg/sundown
