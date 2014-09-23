@@ -8,7 +8,7 @@ function MarkdownRenderer() {
   var renderer = _sd_markdown_new(flags, 16, callbacks, options);
   _free(callbacks);
 
-  this.render = function(text) {
+  this['render'] = function(text) {
     var utf8CharacterArray = intArrayFromString(text);
     var utf8CText = allocate(utf8CharacterArray, 'i8', ALLOC_NORMAL);
     var buffer = _bufnew(1024);
@@ -26,3 +26,4 @@ function MarkdownRenderer() {
 }
 
 this.MarkdownRenderer = MarkdownRenderer;
+window['MarkdownRenderer'] = MarkdownRenderer;
