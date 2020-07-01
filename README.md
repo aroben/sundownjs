@@ -21,6 +21,12 @@ This makes it really easy to use C and C++ libraries on the web. It's even been
 used to convert whole programs to JavaScript and web technologies, like
 [DOOM](http://www.youtube.com/watch?v=WDUPZRQf7oc).
 
+## Settings
+
+You can pass an object with settings to `MarkdownRenderer()` see
+https://github.com/chobie/php-sundown/blob/master/docs/ExtensionsAndRenderFlags.md
+for the available flags and extensions.
+
 # License
 
 Sundown and Emscripten are covered by their own licenses. For everything else:
